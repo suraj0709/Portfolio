@@ -1,32 +1,244 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/fbc114e883.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- sidebar -->
+  <section id="sidebar">
+
+    <div class="logo-div">
+      <a href="index.html"><img class="logo" src="images/logo.svg" alt=""></a>
+    </div>
+
+    <div class="sidebar">
+      <div class="menu">
+        <a href="#home" class="scroll"><i class="fas fa-home"><br><span>Home</span></i></a>
+        <a href="#project" class="scroll"><i class="fas fa-file-code"><br><span>Project</span></i></a>
+        <a href="#about" class="scroll"><i class="fas fa-address-card"><br><span>About Us</span></i></a>
+        <a href="#footer" class="scroll"><i class="fas fa-envelope"><br><span>Contact</span></i></a>
+      </div>
+      <div class="developer">
+        <a href="#" class="vivek"><img src="images/profile-img/vivek.png" alt=""></a>
+        <a href="#" class="suraj"><img
+          src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-19/s320x320/106473039_1336960099835607_5631406067210934715_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_ohc=_uYcu__6yUsAX-svUpE&oh=9bf7b8566f1c7c8e468071bedd2d42e9&oe=5F573256"
+          alt=""></a>
+        <a href="#" calss="sameer"><img src="images/profile-img/sameer.png" alt=""></a>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <div class="container-fluid full-body xyz">
+
+    <header>
+      <!-- NAVBAR -->
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <h2>Round <span>Corner</span></h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link scroll active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#footer">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+    </header>
 
     <!-- Home -->
-    <section>
+
+    <section class="" id="home">
+
+        <div class="">
+          <div class="big-logo">
+            <img class="laptop" src="images/logo.svg" alt="">
+          </div>
+          <div class="home-text">
+            <h1 class="intro-text">Performance as smooth as <br> Round Corner</h1>
+            <p class="intro-text">your dreame website is just ONE click far.</p>
+          </div>
+          <div class="home-btn">
+            <button class="btn btn-outline-dark spacer10" type="button" name="button">Say Hello</button>
+          </div>
+        </div>
 
     </section>
+
+  </div>
+
+
+
+  <div class="full-body">
 
     <!-- Project -->
-    <section>
+    <section class="section project" id="project">
+      <h2>Our Projects</h2>
+      <div class="row">
+        <div class="col-lg-12 project-set">
+          <div class="image part-1">
+            <img src="images/project-img/target-achiver-android/target-achiver.png" alt="">\
+          </div>
+          <div class="detail part-2">
+            <div class="detail1">
+
+            <h3>Target Achiver</h3>
+            <p>Target Achiver is developed to keep a record of your Daily or Important Target, and help you to Achive IT.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 project-set">
+
+          <div class="detail part-1">
+            <div class="detail1">
+
+            <h3>Target Achiver</h3>
+            <p>Target Achiver is developed to keep a record of your Daily or Important Target, and help you to Achive IT.</p>
+
+            </div>
+          </div>
+
+          <div class="image part-2">
+            <img src="images/project-img/v1-portfolio/portfolio.png" alt="">
+          </div>
+
+        </div>
+      </div>
 
     </section>
+
 
     <!-- About -->
-    <section>
+    <section class="section" id="about">
+
+      <h2>Our Amazing Team</h2>
+
+      <div class="row">
+        <div class="card-container">
+          <div class="col-lg-4 card-container card1">
+            <img
+              src="images/profile-img/vivek.png"
+              alt="">
+            <div class="lower-container">
+              <h4>Vivek Kumar</h4>
+              <p>Hello ,this is Vivek!<br>a programmer, webdeveloper, creative person persuading Bachelor degree in Computer Application.</p>
+              <div class="social-media">
+                <a href="https://twitter.com/VivekSalmanMahi?s=09"><i class="footer-icon fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/aayan.singh.5621149"><i class="footer-icon fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/vivek-kumar-487a581a5"><i class="footer-icon fab fa-linkedin-in"></i></a>
+                <a href="mailto:vivekthearya@gmail.com"><i class="footer-icon fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="col-lg-4 card-container card1">
+            <img
+              src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-19/s320x320/106473039_1336960099835607_5631406067210934715_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_ohc=_uYcu__6yUsAX-svUpE&oh=9bf7b8566f1c7c8e468071bedd2d42e9&oe=5F573256"
+              alt="">
+            <div class="lower-container">
+              <h4>Suraj Kumar</h4>
+              <p>I am a web developer and android developer.</p>
+              <div class="social-media">
+                <i class="footer-icon fab fa-twitter"></i>
+                <i class="footer-icon fab fa-facebook-f"></i>
+                <i class="footer-icon fab fa-instagram"></i>
+                <i class="footer-icon fas fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="col-lg-4 card-container card1">
+            <img
+              src="images/profile-img/sameer.png"
+              alt="">
+            <div class="lower-container">
+              <h4>Sameer Singh</h4>
+              <p>I am a web developer and android developer.</p>
+              <div class="social-media">
+                <i class="footer-icon fab fa-twitter"></i>
+                <i class="footer-icon fab fa-facebook-f"></i>
+                <i class="footer-icon fab fa-instagram"></i>
+                <i class="footer-icon fas fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
 
     </section>
+
+
 
     <!-- Footer -->
-    <section>
+    <section id="footer">
+
+      <footer>
+
+        <a href="#"> <i class="ficon fab fa-instagram"></i></a>
+        <a href="#"> <i class="ficon fab fa-twitter"></i></a>
+        <a href="#"> <i class="ficon fab fa-linkedin"></i></a>
+        <a href="#"><i class="ficon fab fa-github"></i></a>
+        <a href="#"><i class="ficon fas fa-envelope"></i></a>
+
+        <p class="credit"><small><strong>Designed & developed by Round Corner</strong></small></p>
+        <p><small>© Copyright 2020 | Round Corner.</small></p>
+
+      </footer>
 
     </section>
-    
-  </body>
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
   <script src="index.js" charset="utf-8"></script>
+</body>
+
+
 </html>
