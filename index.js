@@ -12,13 +12,14 @@ $(".navbar .navbar-brand").hover(
 $('.home-text').waypoint(function() {
   $(".home-text h1").addClass("animate__animated animate__fadeInDown");
   $(".home-text p, .home-btn button").addClass("animate__animated animate__fadeInUp");
+  $(".big-logo, .main-logo").addClass("animate__animated animate__fadeIn animate__slower");
 }, {
   offset: '60%'
 });
 
 $(".project").waypoint(function(){
-  $(".project-set .part-1").addClass("animate__animated animate__fadeInLeft");
-  $(".project-set .part-2").addClass("animate__animated animate__fadeInRight");
+  $(".project-set .image").addClass("animate__animated animate__fadeInLeft");
+  $(".project-set .detail").addClass("animate__animated animate__fadeInRight");
   $("#sidebar .logo-div").addClass("animate__animated animate__fadeInLeft");
   $("#sidebar .sidebar").addClass("animate__animated animate__fadeInLeft");
 },{

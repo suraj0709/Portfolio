@@ -18,6 +18,7 @@ body {
 .project .blank,
 .project-set .image,
 .project-set .detail,
+.main-logo,
 #sidebar .logo-div,
 #sidebar .sidebar,
 #about .card1
@@ -31,6 +32,7 @@ body {
 .project .blank .animate__animated,
 .project-set .detail .animate__animated,
 .project-set .image .animate__animated,
+.main-logo .animate__animated,
 #sidebar .logo-div .animate__animated,
 #sidebar .sidebar .animate__animated,
 #about .card1 .animate__animated
@@ -65,18 +67,6 @@ p {
   font-weight: 300;
 }
 
-/* @media screen and (max-width: 500px) {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 300;
-    font-size: 50px;
-  }
-} */
 
 .section {
   margin: 7% auto;
@@ -98,14 +88,7 @@ header ul li:hover .nav-link {
   transition: 0.3s;
 }
 
-/* .big-logo{
-  display: flex;
-  justify-content: center;
-} */
-.big-logo .mobile{
-  width: 15%;
-}
-.big-logo .laptop{
+.big-logo .main-logo{
   width: 35%;
 }
 
@@ -176,11 +159,12 @@ header ul li:hover .nav-link {
   position: absolute;
   width: auto;
   height: auto;
-  background: #ccc;
+  background: #333;
   margin-top: -30px;
   margin-left: 60px;
   padding: 0 20px;
-  border-radius: 5px;
+  border-radius: 4px;
+  color: #fff;
 }
 .developer .vivek::after{
   content: 'Vivek';
@@ -198,9 +182,9 @@ header ul li:hover .nav-link {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #ccc;
+  background: #333;
   margin-top: 10px;
-  margin-left: 55px;
+  margin-left: 57px;
   transform: rotate(45deg);
 }
 
@@ -236,34 +220,37 @@ header ul li:hover .nav-link {
 }
 
 
-.project-set {
+
+.project-set{
   display: flex;
   justify-content: center;
   padding-top: 5%;
 }
 
-.project-set .image {
+.project-set .image{
   width: 40%;
   transition: 2s all ease-in-out;
   padding: 0 20px;
 }
 .project-set img{
-  max-width: 100%;
+  max-width: 90%;
   max-height: 90%;
 }
+
 .project-set p{
   font-size: 13px;
 }
 
-
 .project-set .detail{
   width: 30%;
   padding: 0 20px;
+  margin: auto 0;
 }
 .project-set .detail1{
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
 }
+
 
 .card-container {
   max-width: 300px;
@@ -288,7 +275,6 @@ header ul li:hover .nav-link {
 .card-container img {
   width: 70%;
   border-radius: 50%;
-  /* transform: translateY(50%); */
 }
 
 .footer-icon {
@@ -321,14 +307,6 @@ header ul li:hover .nav-link {
   color: #DA5044;
 }
 
-/* .footer{
-  padding: 7% 0;
-}
-
-.copyright{
-  font-size: 0.6rem;
-  color: #ccc;
-} */
 footer {
   text-align: center;
   padding: 0 7% 7%;
@@ -364,5 +342,67 @@ footer {
     transition: 0.5s;
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .navbar {
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .navbar-brand h2, .navbar-toggle{
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .navbar {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .navbar-brand h2, .navbar-toggle{
+    font-size: 16px;
+  }
+
+  .big-logo .main-logo{
+    width: 50%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    font-size: 40px;
+  }
+
+ .full-body {
+    transition: 0.5s;
+    padding-left: 10px ;
+    padding-right: 10px ;
+  }
+
+  .project-set {
+    display: block ;
+  }
+
+  .project-set .image {
+    width: 100% ;
+    text-align: center;
+  }
+  .project-set p{
+    font-size: 10px ;
+  }
+  .project-set h3{
+    font-size: 25px;
+  }
+  .project-set .detail{
+    width: 100%;
+    text-align: center;
+  }
+  .project-set .detail1{
+    position: relative;
   }
 }
