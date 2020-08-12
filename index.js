@@ -27,9 +27,16 @@ $(".project").waypoint(function(){
 });
 
 $("#about").waypoint(function(){
-  $("#about .card1").addClass("animate__animated animate__fadeInUp")
+  $("#about .card1").addClass("animate__animated animate__fadeInUp");
 },{
-  offset: "50%"
+  offset: "60%"
+});
+
+$("#project").waypoint(function(){
+  $("#sidebar .logo-div").removeClass("animate__animated animate__fadeInLeft");
+  $("#sidebar .sidebar").removeClass("animate__animated animate__fadeInLeft");
+},{
+  offset: "100%"
 });
 
 
@@ -41,3 +48,8 @@ $(".scroll").click(function(e){
     scrollTop: $(this.hash).offset().top
   },1000);
 })
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggler:visible').click();
+});

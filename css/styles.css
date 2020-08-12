@@ -46,7 +46,8 @@ body {
 
 .navbar {
   min-height: 100px;
-  font-family: 'lato', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
   padding-left: 0px;
 }
 
@@ -69,7 +70,7 @@ p {
 
 
 .section {
-  margin: 7% auto;
+  margin: 14% auto;
 }
 
 header ul li {
@@ -114,6 +115,7 @@ header ul li:hover .nav-link {
   width: 75px;
   bottom: 20px;
   z-index: 10;
+  transition: all 0.3s ease-in-out;
 }
 
 .sidebar span {
@@ -131,10 +133,10 @@ header ul li:hover .nav-link {
 }
 
 .sidebar .developer a {
-  line-height: 30px;
+  line-height: 40px;
 }
 .sidebar .developer img{
-  width: 30px;
+  width: 35px;
   border-radius: 50%;
 }
 
@@ -183,7 +185,7 @@ header ul li:hover .nav-link {
   width: 10px;
   height: 10px;
   background: #333;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 57px;
   transform: rotate(45deg);
 }
@@ -246,10 +248,6 @@ header ul li:hover .nav-link {
   padding: 0 20px;
   margin: auto 0;
 }
-.project-set .detail1{
-  /* position: absolute; */
-  bottom: 0;
-}
 
 
 .card-container {
@@ -307,9 +305,14 @@ header ul li:hover .nav-link {
   color: #DA5044;
 }
 
+.social-media .fa-linkedin-in:hover {
+  color: #0077B5;
+}
+
 footer {
   text-align: center;
   padding: 0 7% 7%;
+  background-image: linear-gradient(to top, #cd9cf2 0%, #fff 100%);
 }
 
 .ficon {
@@ -362,18 +365,19 @@ footer {
 
   .navbar {
     min-height: auto;
-    padding: 20px;
+    padding: 10px ;
   }
 
   .navbar-brand h2, .navbar-toggle{
     font-size: 16px;
+    font-weight: 400;
   }
 
   .big-logo .main-logo{
     width: 50%;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
     font-weight: 300;
     font-size: 40px;
   }
