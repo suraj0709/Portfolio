@@ -237,6 +237,11 @@ header ul li:hover .nav-link {
 .project-set img{
   max-width: 90%;
   max-height: 90%;
+  transition: 0.5s all ease-in-out;
+}
+
+.project-set img:hover{
+  transform: scale(1.05);
 }
 
 .project-set p{
